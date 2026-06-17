@@ -1,0 +1,20 @@
+/* Custom Spacing, Borders, and Typography for Minimal Mistakes Style */
+
+body {
+    /* Academic system font stack */
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+    word-spacing: 0.04rem;
+    letter-spacing: -0.015em;
+}
+
+/* Active navigation link highlights matching Jekyll style */
+.active-tab {
+    color: #2563eb !important; /* Tailwind blue-600 */
+    border-color: #2563eb !important;
+}
+
+/* Page spacing constraints */
+hr {
+    border-color: #f2f3f3;
+    border-width: 1.5px;
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isha Singhal | Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-[#f2f3f3] text-[#2c3e50] font-sans antialiased text-[17px] md:text-[19px] leading-relaxed">
+
+    <!-- Minimal Mistakes Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm py-2 md:py-3">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Site Brand Title -->
+                <div class="flex-shrink-0">
+                    <a href="#" class="text-xl md:text-2xl font-extrabold text-[#3d4144] tracking-tight">Isha Singhal</a>
+                </div>
+                <!-- Nav Links with Active State Tracking -->
+                <nav class="hidden md:flex space-x-6 text-[15px] md:text-[17px] font-bold text-slate-500" id="desktop-nav">
+                    <button data-target="homepage" class="nav-btn hover:text-blue-600 transition-colors border-b-2 border-transparent pb-1 active-tab">Homepage</button>
+                    <button data-target="projects" class="nav-btn hover:text-blue-600 transition-colors border-b-2 border-transparent pb-1">Projects</button>
+                    <button data-target="certifications" class="nav-btn hover:text-blue-600 transition-colors border-b-2 border-transparent pb-1">Certifications</button>
+                    <button data-target="cv" class="nav-btn hover:text-blue-600 transition-colors border-b-2 border-transparent pb-1">CV</button>
+                    <button data-target="contact" class="nav-btn hover:text-blue-600 transition-colors border-b-2 border-transparent pb-1">Contact Me</button>
+                </nav>
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" type="button" class="text-slate-500 hover:text-slate-600 focus:outline-none" aria-label="Toggle menu">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path id="menu-icon-open" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                            <path id="menu-icon-close" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Navigation Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-4 space-y-1">
+            <button data-target="homepage" class="mobile-nav-link block w-full text-left px-3 py-3 rounded-md text-base font-bold text-slate-700 hover:bg-slate-100">Homepage</button>
+            <button data-target="projects" class="mobile-nav-link block w-full text-left px-3 py-3 rounded-md text-base font-bold text-slate-700 hover:bg-slate-100">Projects</button>
+            <button data-target="certifications" class="mobile-nav-link block w-full text-left px-3 py-3 rounded-md text-base font-bold text-slate-700 hover:bg-slate-100">Certifications</button>
+            <button data-target="cv" class="mobile-nav-link block w-full text-left px-3 py-3 rounded-md text-base font-bold text-slate-700 hover:bg-slate-100">CV</button>
+            <button data-target="contact" class="mobile-nav-link block w-full text-left px-3 py-3 rounded-md text-base font-bold text-slate-700 hover:bg-slate-100">Contact Me</button>
+        </div>
+    </header>
+
+    <!-- Content Layout Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+            
+            <!-- COLUMN 1: MINIMAL MISTAKES SIDEBAR (Sticky on Desktop) -->
+            <aside class="lg:col-span-3 bg-white p-6 md:p-8 rounded-lg border border-slate-200 shadow-xs lg:sticky lg:top-24">
+                <div class="flex flex-col items-center lg:items-start text-center lg:text-left">
+                    <!-- Circular Profile Picture -->
+                    <div class="w-44 h-44 lg:w-48 lg:h-48 overflow-hidden rounded-full mb-6 border border-slate-200 shadow-xs">
+                        <img src="assets/images/isha-passport-photo.jpg" alt="Isha Singhal" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Biography Header -->
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-[#3d4144] leading-tight">Isha Singhal</h2>
+                    <p class="text-xs md:text-sm font-bold text-slate-400 uppercase mt-2 tracking-wider">She / Her</p>
+                    <p class="text-[14px] md:text-[15px] font-semibold text-slate-500 uppercase mt-1 tracking-wider">Geospatial Developer</p>
+                    <p class="text-[15px] md:text-[16px] text-slate-500 mt-4 leading-relaxed">M.Tech student at IIRS (ISRO) specializing in Geoinformatics.</p>
+                </div>
+
+                <!-- Vertical Contact Information Blocks -->
+                <hr class="my-6 border-slate-200">
+                <div class="space-y-4 text-[14px] md:text-[15px] text-slate-600 font-semibold">
+                    <div class="flex items-center space-x-3.5">
+                        <i class="fas fa-map-marker-alt text-slate-400 w-5 text-center text-lg"></i>
+                        <span>Dehradun, India</span>
+                    </div>
+                    <div class="flex items-center space-x-3.5">
+                        <i class="fas fa-university text-slate-400 w-5 text-center text-lg"></i>
+                        <span class="leading-snug">IIRS, ISRO</span>
+                    </div>
+                    <div class="flex items-center space-x-3.5">
+                        <i class="fas fa-envelope text-slate-400 w-5 text-center text-lg"></i>
+                        <a href="mailto:recruit.ishasinghal@gmail.com" class="hover:text-blue-600 truncate transition-colors">recruit.ishasinghal@gmail.com</a>
+                    </div>
+                    <div class="flex items-center space-x-3.5">
+                        <i class="fab fa-linkedin text-slate-400 w-5 text-center text-lg"></i>
+                        <a href="https://www.linkedin.com/in/isha-singhal12/" target="https://www.linkedin.com/in/isha-singhal12/" class="hover:text-blue-600 transition-colors">LinkedIn</a>
+                    </div>
+                    <div class="flex items-center space-x-3.5">
+                        <i class="fab fa-github text-slate-400 w-5 text-center text-lg"></i>
+                        <a href="https://github.com/isha-singhal" target="https://github.com/isha-singhal" class="hover:text-blue-600 transition-colors">GitHub</a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- COLUMN 2: DYNAMIC ROUTING WORKSPACE -->
+            <div class="lg:col-span-9 bg-white p-6 md:p-12 rounded-lg border border-slate-200 shadow-xs">
+                
+                <!-- TAB 1: HOMEPAGE (Default View) -->
+                <section id="tab-homepage" class="tab-content space-y-12">
+                    <div>
+                        <h1 class="text-3xl md:text-4xl font-extrabold text-[#3d4144] mb-6 border-b-2 border-slate-200 pb-3">About Me</h1>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            👋 Hello there, I'm Isha, and welcome to my personal portfolio. Recently completed my M.Tech in Remote Sensing and GIS with a specialization in Geoinformatics at the Indian Institute of Remote Sensing (IIRS, ISRO), I am passionate about utilizing deep learning, geospatial data, and modern web architectures to build dynamic, real-world tools.
+                        </p>
+                        <p class="text-slate-600 leading-relaxed mb-6">
+                            My computer science background enables me to bridge the gap between software development and Earth observation datasets. I specialize in building generative and semantic segmentation models to isolate urban infrastructures from high-resolution satellite arrays, alongside designing Web GIS frameworks that deliver actionable analytics.
+                        </p>
+                    </div>
+
+                    <!-- Jekyll-style Star-Rating Skills List -->
+                    <div>
+                        <h2 class="text-2xl font-extrabold text-[#3d4144] mb-6 border-b-2 border-slate-200 pb-3">Skills</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-3 text-base font-semibold text-slate-700">
+                            <div class="flex justify-between border-b border-slate-100 py-2">
+                                <span>Python</span>
+                                <span class="text-amber-500">★★★★☆</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-100 py-2">
+                                <span>ArcGIS & QGIS</span>
+                                <span class="text-amber-500">★★★★☆</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-100 py-2">
+                                <span>Deep Learning (PyTorch)</span>
+                                <span class="text-amber-500">★★★★☆</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-100 py-2">
+                                <span>PostGIS & SQL</span>
+                                <span class="text-amber-500">★★★★☆</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-100 py-2">
+                                <span>Web GIS (Leaflet, Flask)</span>
+                                <span class="text-amber-500">★★★★☆</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-100 py-2">
+                                <span>Machine Learning</span>
+                                <span class="text-amber-500">★★★★☆</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-100 py-2">
+                                <span>C++</span>
+                                <span class="text-amber-500">★★★☆☆</span>
+                            </div>
+                            <div class="flex justify-between border-b border-slate-100 py-2">
+                                <span>Git & Version Control</span>
+                                <span class="text-amber-500">★★★★☆</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TAB 2: PROJECTS -->
+                <section id="tab-projects" class="tab-content hidden space-y-12">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-[#3d4144] mb-6 border-b-2 border-slate-200 pb-3">Projects</h1>
+                    
+                    <div class="space-y-10">
+                        <!-- Project 1 -->
+                        <div>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                                <h3 class="text-xl md:text-2xl font-extrabold text-slate-800 hover:text-blue-600 transition-colors">
+                                    <a href="#">Automated Building Extraction from Satellite Images</a>
+                                </h3>
+                                <span class="text-sm text-slate-400 font-bold whitespace-nowrap">2024 - 2025</span>
+                            </div>
+                            <span class="inline-block text-xs font-bold text-blue-600 uppercase bg-blue-50 px-2 py-1 rounded mt-2">M.Tech Thesis | Computer Vision</span>
+                            <p class="text-slate-600 mt-3 leading-relaxed">
+                                Evaluated deep learning and generative models (Modified U-Net, DeepLabv3+, and Pix2Pix cGAN) for the task of extracting clear building footprints from high-resolution, multispectral satellite imagery.
+                            </p>
+                            <ul class="text-slate-600 list-disc list-outside pl-5 space-y-2 mt-3 text-sm md:text-base">
+                                <li>Curated a robust training dataset of 8,716 high-resolution, multiscale image-label pairs by consolidating four global benchmark datasets.</li>
+                                <li>Developed a dynamic ResNet34-backed U-Net using cyclical learning rates and a hybrid Combo Loss (BCE + Dice), achieving a <strong class="text-slate-800">94.18% validation accuracy and 0.79 F1-score</strong>.</li>
+                                <li>Tested model resilience on unseen imagery across distinct settings: Dehradun (heterogeneous urban area) & Chandigarh (planned urban area). Established critical cross-domain trade-offs between stable CNN segmentation consistency and visually continuous GAN boundary generation.</li>
+                            </ul>
+                        </div>
+
+                        <hr class="border-slate-200">
+
+                        <!-- Project 2 -->
+                        <div>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                                <h3 class="text-xl md:text-2xl font-extrabold text-slate-800 hover:text-blue-600 transition-colors">
+                                    <a href="#">GIS-Enabled Civic Complaint Management System</a>
+                                </h3>
+                                <span class="text-sm text-slate-400 font-bold whitespace-nowrap">2025 - Present</span>
+                            </div>
+                            <span class="inline-block text-xs font-bold text-emerald-600 uppercase bg-emerald-50 px-2 py-1 rounded mt-2">Web GIS</span>
+                            <p class="text-slate-600 mt-3 leading-relaxed">
+                                Developed and deployed a public-facing civic reporting system that can be used by any municipal corporation (in our case Nagar Nigam Dehradun), providing structural tracking of urban infrastructure needs.
+                            </p>
+                            <ul class="text-slate-600 list-disc list-outside pl-5 space-y-2 mt-3 text-sm md:text-base">
+                                <li>Integrated KoboToolbox API flows to map out and dynamically register user reports.</li>
+                                <li>Created custom administrative dashboard analytics using Leaflet.js with live clustering and heatmaps.</li>
+                            </ul>
+                        </div>
+
+                        <hr class="border-slate-200">
+
+                        <!-- Filler Project 3 -->
+                        <div>
+                            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1">
+                                <h3 class="text-xl md:text-2xl font-extrabold text-slate-800 hover:text-blue-600 transition-colors">
+                                    <a href="#">Water Quality Monitoring in Majuli, Assam Using Google Earth Engine</a>
+                                </h3>
+                                <span class="text-sm text-slate-400 font-bold whitespace-nowrap">2025 - Present</span>
+                            </div>
+                            <span class="inline-block text-xs font-bold text-amber-600 uppercase bg-amber-50 px-2 py-1 rounded mt-2">Spatial Analytics</span>
+                            <p class="text-slate-600 mt-3 leading-relaxed">
+                                Developed a cloud-based remote sensing workflow in Google Earth Engine (GEE) to monitor water turbidity across the Majuli district, Assam, using Sentinel-2 satellite imagery (2019–2023).
+                            </p>
+                            <ul class="text-slate-600 list-disc list-outside pl-5 space-y-2 mt-3 text-sm md:text-base">
+                                <li>Applied NDWI (Normalized Difference Water Index) and NDTI (Normalized Difference Turbidity Index) to extract water bodies and assess spatial and temporal variations in water quality.</li>
+                                <li>Performed annual, monthly, and time-series analysis to identify seasonal turbidity trends, revealing increased turbidity during monsoon periods due to rainfall, flooding, and sediment transport.</li>
+                                <li>Generated interactive maps, turbidity classification layers, and visualization dashboards to support environmental monitoring and water resource management decisions in ecologically sensitive riverine regions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                TAB 3: CERTIFICATIONS
+                <section id="tab-certifications" class="tab-content hidden space-y-12">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-[#3d4144] mb-6 border-b-2 border-slate-200 pb-3">Certifications</h1>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-base">
+                        
+
+                        <!-- Certification 2 -->
+                        <div class="border border-slate-200 p-6 rounded-lg bg-slate-50/50">
+                            <span class="text-xs font-bold text-emerald-600 block uppercase mb-1">Infosys</span>
+                            <h3 class="font-extrabold text-slate-800 text-lg mb-2">TechA Python Programming Foundation Certification</h3>
+                            <p class="text-slate-500 text-sm">Issued: 2026 </p>
+                        </div>
+                        <!-- Certification 2 -->
+                        <div class="border border-slate-200 p-6 rounded-lg bg-slate-50/50">
+                            <span class="text-xs font-bold text-emerald-600 block uppercase mb-1">Infosys</span>
+                            <h3 class="font-extrabold text-slate-800 text-lg mb-2">Python for Data Science: Basic Data Visualization Using Seaborn</h3>
+                            <p class="text-slate-500 text-sm">Issued: 2026 </p>
+                        </div>
+                        
+                        <!-- Certification 2 -->
+                        <div class="border border-slate-200 p-6 rounded-lg bg-slate-50/50">
+                            <span class="text-xs font-bold text-emerald-600 block uppercase mb-1">Infosys Springboard</span>
+                            <h3 class="font-extrabold text-slate-800 text-lg mb-2">Python Clean Coding</h3>
+                            <p class="text-slate-500 text-sm">Issued: 2026 </p>
+                        </div>
+                        
+                        <!-- Certification 4 -->
+                      
+                        <!-- Certification 1 -->
+                        <div class="border border-slate-200 p-6 rounded-lg bg-slate-50/50">
+                            <span class="text-xs font-bold text-blue-600 block uppercase mb-1">Coursera</span>
+                            <h3 class="font-extrabold text-slate-800 text-lg mb-2">Databases and SQL for Data Science with Python</h3>
+                            <p class="text-slate-500 text-sm">Issued: 2022 | Credential ID: ARJUX8TK2EA5</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TAB 4: CV -->
+                <section id="tab-cv" class="tab-content hidden space-y-12">
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between border-b-2 border-slate-200 pb-3 mb-6">
+                        <h1 class="text-3xl md:text-4xl font-extrabold text-[#3d4144]">Curriculum Vitae</h1>
+                        <!-- Custom CV Download Placeholder Link -->
+                        <a href="#" class="mt-2 sm:mt-0 inline-flex items-center space-x-2 text-sm font-bold bg-slate-800 text-white px-4 py-2 rounded-lg hover:bg-slate-700 transition">
+                            <i class="fas fa-file-download"></i>
+                            <span>Download PDF CV</span>
+                        </a>
+                    </div>
+
+                    <!-- CV - Education Section -->
+                    <div class="space-y-6">
+                        <h2 class="text-2xl font-bold text-slate-800">Education</h2>
+                        <div class="space-y-6 border-l border-slate-200 pl-5">
+                            <div>
+                                <span class="text-xs font-bold text-slate-400">2023 - 2025</span>
+                                <h4 class="font-extrabold text-slate-800 text-lg mt-1">M.Tech in Remote Sensing and GIS (Geoinformatics)</h4>
+                                <p class="text-sm text-slate-500 mt-1">Indian Institute of Remote Sensing (IIRS, ISRO) | <strong>CGPA: 8.23/10</strong></p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-400">2019 - 2023</span>
+                                <h4 class="font-extrabold text-slate-800 text-lg mt-1">B.Tech in Computer Science and Engineering</h4>
+                                <p class="text-sm text-slate-500 mt-1">Graphic Era Deemed to be University | <strong>CGPA: 9.13/10</strong></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CV - Experience Section -->
+                    <div class="space-y-6 mt-10">
+                        <h2 class="text-2xl font-bold text-slate-800">Work Experience</h2>
+                        <div class="space-y-6 border-l border-slate-200 pl-5">
+                            <div>
+                                <span class="text-xs font-bold text-slate-400">Feb 2023 - Apr 2023</span>
+                                <h4 class="font-extrabold text-slate-800 text-lg mt-1">IGNITE Training Intern</h4>
+                                <p class="text-sm text-slate-500 font-semibold mt-1">LTIMindtree (Remote)</p>
+                                <ul class="text-slate-600 list-disc list-outside pl-4 space-y-1.5 mt-2 text-sm leading-relaxed">
+                                    <li>Selected for the corporate training track focusing on enterprise software in the C# domain.</li>
+                                    <li>Built foundational capacity in Object-Oriented Programming (OOP) design patterns and software development lifecycles (SDLC).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CV - Achievements Section -->
+                    <div class="space-y-6 mt-10">
+                        <h2 class="text-2xl font-bold text-slate-800">Achievements</h2>
+                        <div class="space-y-6 border-l border-slate-200 pl-5 text-sm md:text-base">
+                            <div>
+                                <span class="text-xs font-bold text-slate-400 block mb-1">2024</span>
+                                <h4 class="font-extrabold text-slate-800">Mapathon Second Prize | Indian Society of Remote Sensing</h4>
+                                <p class="text-slate-600 mt-1">Awarded second prize for designing and building an interactive Web GIS software solution targeting forest fire vulnerability and hazard risk mitigation throughout Uttarakhand.</p>
+                            </div>
+                            <div>
+                                <span class="text-xs font-bold text-slate-400 block mb-1">2024</span>
+                                <h4 class="font-extrabold text-slate-800">Poster Presentation | ISRS-ISG National Symposium</h4>
+                                <p class="text-slate-600 mt-1">Published an abstract titled <em>“State-of-the-Art Methods for Extracting Buildings from High-Resolution Satellite Images”</em> in the 2024 symposium proceedings.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- TAB 5: CONTACT ME -->
+                <section id="tab-contact" class="tab-content hidden space-y-12">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-[#3d4144] mb-6 border-b-2 border-slate-200 pb-3">Contact Me</h1>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-10">
+                        <!-- Left Info -->
+                        <div class="md:col-span-5 space-y-6 text-sm md:text-base text-slate-600 font-semibold">
+                            <p class="text-slate-500 font-normal leading-relaxed">
+                                I am open to discussing new research ideas, development opportunities, or collaborations in deep learning, remote sensing, and Web GIS.
+                            </p>
+                            <div class="space-y-4">
+                                <div class="flex items-center space-x-3.5">
+                                    <i class="fas fa-envelope text-slate-400 w-5 text-center text-lg"></i>
+                                    <a href="mailto:isinghal40@gmail.com" class="hover:text-blue-600 truncate transition-colors">recruit.ishasinghal@gmail.com</a>
+                                </div>
+                                <div class="flex items-center space-x-3.5">
+                                    <i class="fab fa-linkedin text-slate-400 w-5 text-center text-lg"></i>
+                                    <a href="#" target="_blank" class="hover:text-blue-600 transition-colors">LinkedIn</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Contact Form -->
+                        <div class="md:col-span-7">
+                            <form id="contact-form" action="#" class="space-y-4 text-sm">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Name</label>
+                                        <input type="text" id="form-name" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2 text-slate-800 focus:outline-none focus:border-blue-600" required>
+                                    </div>
+                                    <div>
+                                        <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Email Address</label>
+                                        <input type="email" id="form-email" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2 text-slate-800 focus:outline-none focus:border-blue-600" required>
+                                    </div>
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-bold text-slate-500 uppercase mb-1">Message</label>
+                                    <textarea id="form-message" rows="4" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-4 py-2 text-slate-800 focus:outline-none focus:border-blue-600" required></textarea>
+                                </div>
+                                <button type="submit" class="w-full py-2.5 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-lg text-sm shadow transition duration-200">Send Message</button>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 py-10 text-center text-sm md:text-base text-slate-400 mt-20">
+        <p>© 2026 Isha Singhal. Powered by Jekyll & AcademicPages.</p>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
